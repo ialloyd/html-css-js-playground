@@ -1,0 +1,28 @@
+.container {
+
+    height: 100vh;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: rgba(0, 128, 0, 0.495);
+}
+
+.container>div {
+
+    border: 1px solid black;
+    display: grid;
+    place-items: center;
+
+}
+
+@media screen and (max-width:900px) {
+
+    .container {
+
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        background-color: rgba(0, 0, 255, 0.418);
+    }
+
+
+}

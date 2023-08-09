@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" class="rel">
+</head>
+
+<body>
+<div class="container">
+        <div id="blue-rectangle"></div>
+        <div id="red-rectangle"></div>
+</div>
+        <button onclick="toggle()">Toggle</button>
+</body>
+
+<script>
+    function toggle(){
+        if(document.getElementById('blue-rectangle').style.zIndex==1){
+            document.getElementById('blue-rectangle').style.zIndex=-1;
+        }
+        else{
+            document.getElementById('blue-rectangle').style.zIndex=1;
+        }
+    }
+</script>
+
+</html>

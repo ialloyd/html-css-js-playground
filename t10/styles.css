@@ -1,0 +1,42 @@
+.container{
+
+    display: flex;
+    color:white;
+}
+.container>div{
+
+    padding: 10px;
+}
+.icon{
+    margin-right: 1vw;
+    display: none;
+}
+
+.main{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-inline: 2vw;
+    background-color: grey;
+}
+
+@media screen and (max-width:600px) {
+
+    .main>.icon{
+        display:block;
+    }
+
+    .container,.responsive{
+        display: flex;
+        flex-direction: column;
+        padding:10px;
+    }
+    .main>.container>div:not(.active){
+        display: none;
+        
+    }
+    
+
+}
+

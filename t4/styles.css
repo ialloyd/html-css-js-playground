@@ -1,0 +1,36 @@
+
+#blue-rectangle{
+
+    width:100px;
+    height:100px;
+    background-color:blue;
+    position:absolute;
+    top:-10px;
+    left:-10px;
+
+}
+
+#red-rectangle{
+
+    width:100px;
+    height:100px;
+    background-color:red;
+}
+
+.container{
+    position: relative;
+}
+
+button{
+
+    transform: translateY(25px);
+}
+
+
+
+
+
+
+
+
+
