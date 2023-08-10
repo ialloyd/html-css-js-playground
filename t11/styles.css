@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidenav {
+    padding: 10px;
+    position: fixed;
+    background-color:black;
+    height: 100%;
+    width: 100px;
+    font-size: larger;
+    color:grey;
+}
+
+.sidenav>div {
+
+    padding-bottom: 10px;
+}
+
+.main {
+
+    margin-left: 150px;
+    font-size:30px;
+
+}
