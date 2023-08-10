@@ -22,34 +22,37 @@
 
 @media (min-width:900px) {
 
-    .nav{
+    .nav {
 
         display: flex;
         flex-direction: column;
-        height:100%;
+        height: 100%;
         position: fixed;
-        width:190px;
+        width: 190px;
     }
-    .container{
 
-        display:flex;
+    .container {
+
+        display: flex;
 
     }
-    .main{
 
-       margin-left:190px;
+    .main {
+
+        margin-left: 190px;
     }
-    
+
 }
-.active{
+
+.active {
 
     background-color: green;
-    color:white;
+    color: white;
 }
 
-@media screen and (max-width:600px){
+@media screen and (max-width:600px) {
 
-    .nav{
+    .nav {
 
         display: flex;
         flex-direction: column;
