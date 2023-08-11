@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.783);
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.container>.left {
+
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.container>.right {
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container>.left>div {
+
+    padding: 15px;
+}
+
+.container>.right>div {
+
+    padding: 15px;
+}
+
+.active {
+
+    background-color: green;
+}
+
+.main {
+
+    padding: 15px;
+}
