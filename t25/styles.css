@@ -1,0 +1,38 @@
+.text {
+
+    position: absolute;
+    border: 1px solid red;
+    right:0;
+    bottom:0;
+    left:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(0, 0, 0, 0.29);
+    opacity:0;
+    transition: 0.5s;
+    color:white;
+    overflow: hidden;
+
+}
+
+
+.container {
+
+    position: relative;
+    border: 1px solid blue;
+    width: 50%;
+
+}
+
+img {
+
+    width: 100%;
+    display: block;
+
+}
+
+.container:hover .text{
+
+    opacity: 1;
+}

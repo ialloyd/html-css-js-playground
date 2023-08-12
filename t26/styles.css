@@ -1,0 +1,56 @@
+.container {
+
+    position: relative;
+    text-align: center;
+
+}
+
+img {
+
+    width: 100%;
+}
+
+.top-left {
+
+    position: absolute;
+    top: 0;
+    left:0;
+    color: white;
+    padding: 10px;
+}
+
+.bottom-left {
+
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    color: white;
+    padding: 10px;
+}
+
+.top-right {
+
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: white;
+    padding: 10px;
+}
+
+.bottom-right {
+
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    color: white;
+    padding: 10px;
+}
+
+.container>.center {
+
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
