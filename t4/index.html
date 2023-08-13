@@ -9,21 +9,26 @@
 </head>
 
 <body>
-<div class="container">
+    <div class="container">
         <div id="blue-rectangle"></div>
         <div id="red-rectangle"></div>
-</div>
         <button onclick="toggle()">Toggle</button>
+    </div>
+
 </body>
 
 <script>
-    function toggle(){
-        if(document.getElementById('blue-rectangle').style.zIndex==1){
-            document.getElementById('blue-rectangle').style.zIndex=-1;
+    function toggle() {
+
+        if (document.getElementById('red-rectangle').style.zIndex == -1) {
+
+            document.getElementById('red-rectangle').style.zIndex = 1
         }
-        else{
-            document.getElementById('blue-rectangle').style.zIndex=1;
+        else {
+
+            document.getElementById('red-rectangle').style.zIndex = -1;
         }
+
     }
 </script>
 

@@ -1,36 +1,27 @@
+#blue-rectangle {
 
-#blue-rectangle{
-
-    width:100px;
-    height:100px;
-    background-color:blue;
-    position:absolute;
-    top:-10px;
-    left:-10px;
-
+    height: 100px;
+    width: 100px;
+    background-color: blue;
 }
 
-#red-rectangle{
+#red-rectangle {
 
-    width:100px;
-    height:100px;
-    background-color:red;
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    position: absolute;
+    top: 10px;
+    left: 10px;
 }
 
-.container{
+.container {
+
     position: relative;
 }
 
-button{
+button {
 
-    transform: translateY(25px);
+    position: absolute;
+    top: 120px;
 }
-
-
-
-
-
-
-
-
-
