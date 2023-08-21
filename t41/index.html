@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+
+            box-sizing: border-box;
+        }
+        .container{
+
+            display:grid;
+            grid-template-columns: repeat(7,1fr);
+            margin-top: 2vh;
+            gap:20px;
+    
+        }
+        .container > div{
+
+            border:2px solid black;
+            height:100px;
+            width:100px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1vh;
+            background-color: rgba(17, 131, 93, 0.989);
+            color:aliceblue;
+            width:100%;
+            border-radius: 10px;
+
+            
+        }
+
+        button{
+
+            background-color: rgba(128, 128, 128, 0.612);
+            border:none;
+            padding:10px;
+            margin-right: 10px;
+            color:white;
+            border-radius:10px;
+            border:2px solid black;
+        }
+
+    </style>
+</head>
+
+<body>
+    
+    <button>Show All</button>
+    <button>Cars</button>
+    <button>Animals</button>
+    <button>Fruits</button>
+    <button>Colors</button>
+
+    <div class="container">
+
+        <div class="filterDiv cars">BMW</div>
+        <div class="filterDiv colors fruits">Orange</div>
+        <div class="filterDiv cars">Volvo</div>
+        <div class="filterDiv colors">Red</div>
+        <div class="filterDiv cars">Ford</div>
+        <div class="filterDiv colors">Blue</div>
+        <div class="filterDiv animals">Cat</div>
+        <div class="filterDiv animals">Dog</div>
+        <div class="filterDiv fruits">Melon</div>
+        <div class="filterDiv fruits animals">Kiwi</div>
+        <div class="filterDiv fruits">Banana</div>
+        <div class="filterDiv fruits">Lemon</div>
+        <div class="filterDiv animals">Cow</div>
+
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
