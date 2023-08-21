@@ -1,8 +1,8 @@
 function createCounter() {
     let countA = 0;
     let countB = 0;
-    return {
-        incrementA: function () {
+    
+        function incrementA () {
 
             countA++;
             countB--;
@@ -12,8 +12,8 @@ function createCounter() {
                 countB=0;
                 document.getElementsByTagName('h5')[0].innerHTML="Player A wins!";
             }
-        },
-        incrementB: function () {
+        }
+        function incrementB() {
 
             countB++;
             countA--;
@@ -23,17 +23,19 @@ function createCounter() {
                 countB=0;
                 document.getElementsByTagName('h5')[0].innerHTML="Player B wins!";
             }
-        },
+        }
     
-        retrieve: function () {
+        function retrieve() {
             document.getElementsByTagName('h4')[0].innerHTML='A:'+countA+' '+'B:'+countB;
         }
-    };
+
+        return {incrementA, incrementB, retrieve}
+
 }
 
-const counter = createCounter();
-counter.retrieve();
 
-document.getElementById('player-a').addEventListener('click', counter.incrementA);
-document.getElementById('player-b').addEventListener('click', counter.incrementB);
+createCounter().retrieve();
+
+document.getElementById('player-a').addEventListener('click', createCounter().incrementA);
+document.getElementById('player-b').addEventListener('click', createCounter().incrementB);
 
