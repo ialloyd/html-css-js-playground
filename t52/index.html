@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+
+            background-color: aqua;
+
+        }
+
+        body>div {
+            background-color: aliceblue;
+        }
+
+        h1 {
+
+            background-color: rgba(128, 128, 128, 0.402);
+            padding: 10px;
+
+        }
+
+        p {
+            padding: 20px;
+            display: none;
+
+        }
+
+        h1:after {
+            content: '\02795';
+            float: right;
+            font-size: medium;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .minus:after {
+
+            content: "\2796";
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Collapsible</h1>
+        <p>
+            Some collapsible content. Click the button to toggle between showing and hiding the collapsible content.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo
+            Some collapsible content. Click the button to toggle between showing and hiding the collapsible content.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo
+        </p>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
