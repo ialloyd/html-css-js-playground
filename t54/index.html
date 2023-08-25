@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin-top: 15vh;
+            display: grid;
+            place-items: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+        }
+
+        input {
+
+            width: 100%;
+            padding: 5px;
+            border: none;
+            margin-top: 2vh;
+            border-radius:10px;
+        }
+
+        input:focus {
+            outline: none;
+        }
+
+        p {
+
+            color: red;
+        }
+
+        .invalid:before {
+
+            content: "✖";
+            padding-right: 15px;
+        }
+
+        div {
+            background-color: rgba(128, 128, 128, 0.16);
+            padding: 20px;
+            border-radius: 20px;
+        }
+
+        input[type='submit'] {
+            background-color: rgba(0, 128, 0, 0.632);
+            border: none;
+            color: white;
+        }
+
+        .valid {
+            color: rgba(0, 128, 0, 0.68);
+        }
+
+        .valid:before {
+            content: "✔";
+            padding-right: 15px;
+
+        }
+
+        span {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <form action="">
+            <label for="">UserName:</label>
+            <input type="text" required><br><br>
+            <label for="">Password:</label>
+            <input type="password" required><br><br>
+            <input type="submit">
+        </form>
+        <span id="message">
+            <h3>Password must contain the following:</h3>
+            <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+            <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+            <p id="number" class="invalid">A <b>number</b></p>
+            <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+        </span>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
